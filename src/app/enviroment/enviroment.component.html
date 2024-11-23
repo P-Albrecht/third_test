@@ -1,4 +1,12 @@
 <div class="enviroment-container">
+    <app-heroes *ngIf="this.component === 'ChatComponent'"
+    ></app-heroes>
+    <app-repo-content *ngIf="this.component === 'SettingsComponent'"
+    ></app-repo-content>
+    <app-tree-view *ngIf="this.component === 'TreeViewComponent'"
+      [tree]=this.treeInputValue
+      (nodeSelectEvent)="nodeSelectEventOutputEvent($event)"
+    ></app-tree-view>
 </div>
 
 <button type="button" (click)="onClickMe()">Click me!</button>
