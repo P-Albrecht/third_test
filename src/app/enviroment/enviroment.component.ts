@@ -22,4 +22,10 @@ export class EnviromentComponent {
   onClickMe() {
     console.log('...........')
   }
+
+  treeInputValue = [{name:'aaa', children:[{name:'bbb', children:[]}]}, {name:'ccc', children:[{name:'ddd', children:[]}, 
+
+  nodeSelectEventOutputEvent(response: any) {
+    console.log(response)
+  }
 }
